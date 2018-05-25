@@ -1,0 +1,1482 @@
+2018-05-22 11:23:49 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: sun)
+2018-05-22 11:23:49 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.16299-SP0
+2018-05-22 11:23:49 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'sun', 'LOG_FILE': 'sun.log', 'NEWSPIDER_MODULE': 'sun.spiders', 'SPIDER_MODULES': ['sun.spiders']}
+2018-05-22 11:23:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-22 11:23:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-22 11:23:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-22 11:23:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['sun.pipelines.SunPipeline']
+2018-05-22 11:23:50 [scrapy.core.engine] INFO: Spider opened
+2018-05-22 11:23:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-22 11:23:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=> (referer: None)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371740.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371741.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371801.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371743.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=30> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371747.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371740.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371741.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371763.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371761.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371801.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371743.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371760.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=60> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371767.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371750.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=120> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371747.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=91110> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371763.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371761.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371751.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371760.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=90> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/index.php/question/questionType?type=4&page=60> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371749.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371753.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371770.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371767.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371737.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371750.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371756.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371773.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371754.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371774.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371772.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371672.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371751.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371685.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371678.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371674.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371682.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371755.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371749.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371753.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371687.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371770.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371737.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371756.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371773.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371689.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371698.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371701.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371692.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371702.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371754.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371774.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371772.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371672.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371693.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371565.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371685.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371678.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371674.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371682.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371755.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371687.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371689.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371698.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371701.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371692.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371702.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371511.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371693.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=30)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371565.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371513.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371511.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371624.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371517.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371512.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371513.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371626.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371624.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371629.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371671.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371517.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371512.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=120)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371626.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371631.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371633.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371632.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371630.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371629.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371671.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371635.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371638.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371631.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371636.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371633.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371641.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371632.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371642.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371630.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371643.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371635.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371638.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371639.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371636.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371644.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371641.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371642.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371649.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371643.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371639.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371650.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371644.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371657.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371649.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371650.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371652.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371645.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371659.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371653.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371657.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371663.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371664.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371665.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371652.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371645.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371662.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371659.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371653.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371670.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371663.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371664.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371665.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371668.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371662.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371666.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371570.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371670.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371572.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371668.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371576.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371666.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=60)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371570.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371568.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371572.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371577.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371574.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371579.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371576.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371581.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371568.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371584.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371577.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371587.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371574.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371579.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371580.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371593.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371581.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371584.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371594.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371590.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371587.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371580.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371589.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://wz.sun0769.com/html/question/201805/371593.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spiders\crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "D:\DATA\python\Scrapy_Spiser\sun\sun\spiders\sundg.py", line 34, in parseDongguan
+    content = response.xpath('//div[@class="contentext"]/text()').extractor()
+AttributeError: 'SelectorList' object has no attribute 'extractor'
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371597.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
+2018-05-22 11:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wz.sun0769.com/html/question/201805/371598.shtml> (referer: http://wz.sun0769.com/index.php/question/questionType?type=4&page=90)
